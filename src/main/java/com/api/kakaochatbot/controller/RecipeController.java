@@ -1,13 +1,11 @@
-package com.api.opendata.controller;
+package com.api.kakaochatbot.controller;
 
-import com.api.opendata.model.chatbot.ListCardRequest;
-import com.api.opendata.service.FoodRecipeService;
+import com.api.kakaochatbot.service.FoodRecipeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

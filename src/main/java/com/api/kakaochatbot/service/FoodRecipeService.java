@@ -1,14 +1,13 @@
-package com.api.opendata.service;
+package com.api.kakaochatbot.service;
 
-import com.api.opendata.common.util.MovieEnum;
-import com.api.opendata.common.util.Utility;
-import com.api.opendata.model.chatbot.ListCardReponse;
-import com.api.opendata.model.chatbot.ListCardRequest;
-import com.api.opendata.process.Movie;
+import com.api.kakaochatbot.common.util.MovieEnum;
+import com.api.kakaochatbot.common.util.Utility;
+import com.api.kakaochatbot.model.chatbot.ListCardReponse;
+import com.api.kakaochatbot.model.chatbot.ListCardRequest;
+import com.api.kakaochatbot.process.Movie;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 
 @Service
 public class FoodRecipeService {

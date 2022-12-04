@@ -2,26 +2,18 @@ package com.api.kakaochatbot.process;
 
 
 import com.api.kakaochatbot.common.util.Utility;
-import com.api.kakaochatbot.model.chatbot.ListCardReponse;
 import com.fasterxml.jackson.core.JsonProcessingException;
-import org.jsoup.Connection;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
 import org.springframework.stereotype.Service;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
 
 @Service
-public class TourKorService {
+public class TourKor {
     static String _tour_url = "http://apis.data.go.kr/B551011/KorService";
     static String _areaBase_path = "/areaBasedList";
-    static String _serviceKey = "w+aloIJxj+WOIOgQzb6aDZi7OSjvOlKcTKPCbZYxUDW/h1/ngJMTwd6SqoWJe4dwvc19Gw6ryg8PEVfc+CvM9g==";
+    static String _serviceKey = "w%2BaloIJxj%2BWOIOgQzb6aDZi7OSjvOlKcTKPCbZYxUDW%2Fh1%2FngJMTwd6SqoWJe4dwvc19Gw6ryg8PEVfc%2BCvM9g%3D%3D";
 
     public String AreaBaseSearch() throws JsonProcessingException, IOException
     {
