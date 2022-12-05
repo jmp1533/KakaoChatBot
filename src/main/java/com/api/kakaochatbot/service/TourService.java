@@ -21,8 +21,6 @@ public class TourService {
         ListCardReponse.Template Template = new ListCardReponse.Template();
         ArrayList<ListCardReponse.QuickReplies> quickReplies = new ArrayList<>();
 
-        String type = "";
-        String typeKR = "";
         String response = "";
 
         try{
@@ -52,8 +50,6 @@ public class TourService {
         ListCardReponse.Template Template = new ListCardReponse.Template();
         ArrayList<ListCardReponse.QuickReplies> quickReplies = new ArrayList<>();
 
-        String type = "";
-        String typeKR = "";
         String response = "";
 
         try{
@@ -65,7 +61,6 @@ public class TourService {
 
         return response;
     }
-
 
     public ListCardReponse.QuickReplies GetQuickReplies(String label, String message){
         ListCardReponse.QuickReplies quickReplies = new ListCardReponse.QuickReplies();

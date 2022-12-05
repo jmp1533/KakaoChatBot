@@ -39,6 +39,5 @@ public class TourCourseController {
 
         return ResponseEntity.ok().headers(headers).body(response);
     }
-
 }
 
