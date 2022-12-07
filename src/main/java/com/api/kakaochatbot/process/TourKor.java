@@ -1,6 +1,7 @@
 package com.api.kakaochatbot.process;
 
 import com.api.kakaochatbot.common.util.Utility;
+import com.api.kakaochatbot.model.chatbot.TourKorServiceRS;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.springframework.stereotype.Service;
 import org.springframework.util.LinkedMultiValueMap;
@@ -19,6 +20,10 @@ public class TourKor {
     public String AreaBaseSearch() throws JsonProcessingException, IOException
     {
         String response = Utility.GetHttp(_tour_url, _areaBase_path, GetParam());
+
+        TourKorServiceRS tourKorServiceRS = Utility.JsonDeSerialize(response, TourKorServiceRS.class);
+
+        tourKorServiceRS.getResponse();
 
         return response;
     }
